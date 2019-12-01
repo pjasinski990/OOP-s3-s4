@@ -13,6 +13,7 @@ public:
 	 * \param string String to be allocated at character array.
 	 */
 	MyString(const char* string);
+	
 	/*
 	 * "Loud" destructor. (we totally know what were doing)
 	 */
@@ -43,6 +44,7 @@ public:
 	 * \return void
 	 */
 	void append(const MyString& string2);
+	
 	/*
 	 * Method for replacing character array from another MyString object
 	 * to the one we're calling on.
