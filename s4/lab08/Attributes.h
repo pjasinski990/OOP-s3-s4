@@ -9,6 +9,7 @@ class AttColor
 public:
     enum Attribute { BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, GRAY, WHITE, DEFAULT };
     
+    virtual ~AttColor() = default;
     AttColor(Attribute color): m_color{color} 
     {
         
@@ -31,6 +32,7 @@ class AttFormat
 public:
     enum Attribute { BOLD, DIM, UNDERLINED, NORMAL };
     
+    virtual ~AttFormat() = default;
     AttFormat(Attribute format): m_format{format} 
     {
         
