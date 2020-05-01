@@ -13,5 +13,6 @@ public:
      *
      * @return std::string string to be printed
      */
+    virtual ~MyPrintable() = default;
     virtual std::string rawString() const = 0;
 };
