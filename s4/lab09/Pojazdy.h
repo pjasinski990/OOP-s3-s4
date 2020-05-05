@@ -77,7 +77,7 @@ private:
 class Rower: public PojazdLadowy
 {
 public:
-    Rower(const std::string plate): 
+    Rower(const std::string& plate): 
             Pojazd(plate)
     {
         m_type = "Rower";
@@ -91,7 +91,7 @@ public:
 class Amfibia: public Samochod, public Motorowka
 {
 public:
-    Amfibia(const std::string plate, const PredkoscMaksymalna& vland, const PredkoscMaksymalna vwater):
+    Amfibia(const std::string& plate, const PredkoscMaksymalna& vland, const PredkoscMaksymalna& vwater):
             Pojazd(plate),
             Samochod{plate, vland},
             Motorowka{plate, vwater}

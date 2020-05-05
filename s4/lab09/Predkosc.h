@@ -2,7 +2,8 @@
 #include <ostream>
 
 /*
- * Wrapper class for int. Represents max speed of a vehicle
+ * Wrapper class for int. Represents max speed of a vehicle provided in km/h.
+ * Printing to stream returns stored speed with unit.
  */
 class PredkoscMaksymalna
 {
